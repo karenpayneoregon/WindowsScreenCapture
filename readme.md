@@ -20,3 +20,8 @@ private void CaptureDesktopButton_Click(object sender, EventArgs e)
     pictureBox2.Image = ops.CaptureScreen();
 }
 ```
+Captures a screen shot of a specific window, and saves it to a file
+[CaptureWindowToFile](https://github.com/karenpayneoregon/WindowsScreenCapture/blob/master/ScreenLibrary/ScreenCapture.cs#L56)(IntPtr handle, string filename, ImageFormat format)
+
+Captures a screen shot of the entire desktop, and saves it to a file
+[CaptureScreenToFile](https://github.com/karenpayneoregon/WindowsScreenCapture/blob/master/ScreenLibrary/ScreenCapture.cs#L66)(string filename, ImageFormat format)
