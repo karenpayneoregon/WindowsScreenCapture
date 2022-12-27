@@ -33,9 +33,13 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.CaptureDesktopButton = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.PictureBoxButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // CaptureThisButton
@@ -89,11 +93,46 @@
             this.CaptureDesktopButton.UseVisualStyleBackColor = true;
             this.CaptureDesktopButton.Click += new System.EventHandler(this.CaptureDesktopButton_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(12, 139);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(183, 132);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox3_Paint);
+            this.pictureBox3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseDown);
+            this.pictureBox3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseMove);
+            // 
+            // PictureBoxButton
+            // 
+            this.PictureBoxButton.Location = new System.Drawing.Point(37, 277);
+            this.PictureBoxButton.Name = "PictureBoxButton";
+            this.PictureBoxButton.Size = new System.Drawing.Size(158, 23);
+            this.PictureBoxButton.TabIndex = 5;
+            this.PictureBoxButton.Text = "PictureBox";
+            this.PictureBoxButton.UseVisualStyleBackColor = true;
+            this.PictureBoxButton.Click += new System.EventHandler(this.PictureBoxButton_Click);
+            // 
+            // ClearButton
+            // 
+            this.ClearButton.Location = new System.Drawing.Point(37, 306);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(158, 23);
+            this.ClearButton.TabIndex = 6;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 341);
+            this.Controls.Add(this.ClearButton);
+            this.Controls.Add(this.PictureBoxButton);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.CaptureDesktopButton);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.groupBox1);
@@ -103,6 +142,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -114,6 +154,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button CaptureDesktopButton;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button PictureBoxButton;
+        private System.Windows.Forms.Button ClearButton;
     }
 }
 
